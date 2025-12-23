@@ -263,6 +263,7 @@ section {
 .about-box p {
     color: var(--secondary-color);
 }
+
 /* Projects Section */
 .projects-container {
     display: grid;
@@ -483,10 +484,11 @@ section {
 .experience-box {
     transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
+
 .experience-box:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    border-color: rgba(0,0,0,0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 /* Responsive: single column on small screens */
@@ -494,6 +496,7 @@ section {
     .experience-container {
         grid-template-columns: 1fr;
     }
+
     .competitive-card {
         grid-column: auto;
         max-width: 100%;
@@ -507,6 +510,41 @@ section {
 .skill-item div p {
     color: var(--secondary-color);
     font-size: 0.9rem;
+}
+
+.level-badge {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0.18rem 0.5rem;
+    border-radius: 12px;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: 215px;
+}
+
+.project-desc {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    color: #444
+}
+
+.system-design-card .skills-grid {
+    display: block
+}
+
+.system-design-card .skill-item {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 0.45rem 0
+}
+
+.system-design-card .skill-item img {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px
 }
 
 /* Projects Section */
